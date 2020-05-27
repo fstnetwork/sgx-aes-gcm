@@ -10,7 +10,7 @@
 #include "stdlib.h"
 #include "string.h"
 
-#define BUFLEN 2048
+#define BUFLEN 1048576
 #define SGX_AESGCM_MAC_SIZE 16
 #define SGX_AESGCM_IV_SIZE 12
 
