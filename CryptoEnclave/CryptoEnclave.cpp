@@ -5,7 +5,7 @@
 #include "stdlib.h"
 #include <string.h>
 
-#define BUFLEN 1048576
+#define BUFLEN 1148576
 static sgx_aes_gcm_128bit_key_t key = { 0x0, 0x1, 0x2, 0x3, 0x4, 0x5, 0x6, 0x7, 0x8, 0x9, 0xa, 0xb, 0xc, 0xd, 0xe, 0xf };
 
 void decryptMessage(char *encMessageIn, size_t len, char *decMessageOut, size_t lenOut)
