@@ -8,8 +8,7 @@
 
 #include <string.h>
 
-#
-define BUFLEN 2048
+#define BUFLEN 2048
 static sgx_aes_gcm_128bit_key_t key = {
     0x0,
     0x1,
