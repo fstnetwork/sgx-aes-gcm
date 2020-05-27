@@ -13,7 +13,7 @@ void decryptMessage(char *encMessageIn, size_t len, char *decMessageOut, size_t 
 	uint8_t *encMessage = (uint8_t *) encMessageIn;
 	uint8_t p_dst[BUFLEN] = {0};
 
-	for(int ii = 0;ii<100000;ii++){
+	for(int ii = 0;ii<1000000;ii++){
 
 	sgx_rijndael128GCM_decrypt(
 		&key,
@@ -35,7 +35,7 @@ void encryptMessage(char *decMessageIn, size_t len, char *encMessageOut, size_t 
 
 	// Generate the IV (nonce)
 	sgx_read_rand(p_dst + SGX_AESGCM_MAC_SIZE, SGX_AESGCM_IV_SIZE);
-	for(int ii = 0;ii<100000;ii++){
+	for(int ii = 0;ii<1000000;ii++){
 	sgx_rijndael128GCM_encrypt(
 		&key,
 		origMessage, len, 
