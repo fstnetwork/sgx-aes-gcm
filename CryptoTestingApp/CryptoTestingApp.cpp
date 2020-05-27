@@ -61,6 +61,5 @@ int main()
 	decMessage[decMessageLen] = '\0';
 	printf("Decrypted message: %s", decMessage);
 
-	getchar();
 	return 0;
 }
